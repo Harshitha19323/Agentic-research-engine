@@ -23,30 +23,31 @@ Multi-Agent Architecture: Implements a system with distinct AI agents (e.g., a "
 # 🧠 How It Works
 The core of this project is a graph-based state machine defined using LangGraph. The workflow typically involves:
 
-Initial Query: A user provides a research topic.
+a.Initial Query: A user provides a research topic.
 
-Researcher Agent: An agent, often powered by an LLM, uses a web search tool (e.g., Tavily) to gather information related to the query.
+b.Researcher Agent: An agent, often powered by an LLM, uses a web search tool (e.g., Tavily) to gather information related to the query.
 
-Writer Agent (or Analyst/Supervisor): The gathered information is then passed to another agent responsible for analyzing, synthesizing, and summarizing the findings into a structured report.
+c.Writer Agent (or Analyst/Supervisor): The gathered information is then passed to another agent responsible for analyzing, synthesizing, and summarizing the findings into a structured report.
 
-Dynamic Routing: LangGraph's state management enables dynamic transitions between agents based on the current state and task completion.
+d.Dynamic Routing: LangGraph's state management enables dynamic transitions between agents based on the current state and task completion.
 
-Observability: Throughout this process, LangSmith captures every step, tool call, and LLM interaction, providing a detailed trace for debugging and analysis.
+e.Observability: Throughout this process, LangSmith captures every step, tool call, and LLM interaction, providing a detailed trace for debugging and analysis.
 
 # 🛠️ Setup and Installation
 To get this project up and running, follow these steps:
 
 Create a virtual environment:
-
+```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
+```
 Install dependencies:
-
+```bash
 pip install -r requirements.txt
+```
 
 Set up API Keys:
-Rename sample.env (or create a new .env file) to .env in the root of your project directory and add your API keys. You will need:
+create a new .env file in the root of project directory and added  API keys: 
 
 GROQ_API_KEY (for LLM access)
 
@@ -55,33 +56,30 @@ TAVILY_API_KEY (for web search tool)
 LANGCHAIN_API_KEY (for LangSmith tracing)
 
 Your .env file should look like this:
-
+```bash
 GROQ_API_KEY="your_groq_api_key_here"
 TAVILY_API_KEY="your_tavily_api_key_here"
 LANGCHAIN_API_KEY="your_langchain_api_key_here"
+```
 
 Also set LANGSMITH_TRACING="true" and LANGSMITH_PROJECT="TestProject" as environment variables or directly in your Python files (as seen in debugging.ipynb and agent.py).
 
 🚀 Usage
 The project is primarily demonstrated through Jupyter notebooks, each showcasing a different aspect of agentic development:
 
-multiaiagent.ipynb: Explores the basic multi-agent architecture for research and summarization.
+File 1: multiaiagent.ipynb: Explores the basic multi-agent architecture for research and summarization.
 
-basicchatbot.ipynb: Demonstrates the fundamentals of building a conversational chatbot with LangGraph.
+File 2:basicchatbot.ipynb: Demonstrates the fundamentals of building a conversational chatbot with LangGraph.
 
-debugging.ipynb: Focuses on using LangSmith for tracing and debugging agent workflows.
+File 3:debugging.ipynb: Focuses on using LangSmith for tracing and debugging agent workflows.
 
-humaninloop.ipynb: Illustrates how to integrate human intervention into an agent's process.
+File 4:humaninloop.ipynb: Illustrates how to integrate human intervention into an agent's process.
 
-agent.py: Contains modular agent definitions and graph construction logic.
+File 5:agent.py: Contains modular agent definitions and graph construction logic.
 
-To run a notebook, execute:
 
-jupyter notebook
 
-Then open the desired .ipynb file and run the cells.
-
-💡 Future Enhancements
+# 💡 Future Enhancements
 Streamlit Web UI: Develop a user-friendly Streamlit application to allow interactive queries and display agent outputs.
 
 Advanced Tooling: Integrate more diverse tools (e.g., YouTube transcript fetcher, data analysis tools, image generation).
@@ -91,4 +89,5 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
