@@ -65,7 +65,7 @@ LANGCHAIN_API_KEY="your_langchain_api_key_here"
 
 Also set LANGSMITH_TRACING="true" and LANGSMITH_PROJECT="TestProject" as environment variables or directly in your Python files (as seen in debugging.ipynb and agent.py).
 
-🚀 Usage
+# 🚀 Usage
 
 The project is primarily demonstrated through Jupyter notebooks, each showcasing a different aspect of agentic development:
 
@@ -92,6 +92,7 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
 
 
