@@ -47,6 +47,7 @@ pip install -r requirements.txt
 ```
 
 Set up API Keys:
+
 create a new .env file in the root of project directory and added  API keys: 
 
 GROQ_API_KEY (for LLM access)
@@ -65,6 +66,7 @@ LANGCHAIN_API_KEY="your_langchain_api_key_here"
 Also set LANGSMITH_TRACING="true" and LANGSMITH_PROJECT="TestProject" as environment variables or directly in your Python files (as seen in debugging.ipynb and agent.py).
 
 🚀 Usage
+
 The project is primarily demonstrated through Jupyter notebooks, each showcasing a different aspect of agentic development:
 
 File 1: multiaiagent.ipynb: Explores the basic multi-agent architecture for research and summarization.
@@ -80,6 +82,7 @@ File 5:agent.py: Contains modular agent definitions and graph construction logic
 
 
 # 💡 Future Enhancements
+
 Streamlit Web UI: Develop a user-friendly Streamlit application to allow interactive queries and display agent outputs.
 
 Advanced Tooling: Integrate more diverse tools (e.g., YouTube transcript fetcher, data analysis tools, image generation).
@@ -89,5 +92,6 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
 
