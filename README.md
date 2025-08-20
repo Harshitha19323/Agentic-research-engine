@@ -50,11 +50,11 @@ Set up API Keys:
 
 create a new .env file in the root of project directory and added  API keys: 
 
-GROQ_API_KEY (for LLM access)
+1)GROQ_API_KEY (for LLM access)
 
-TAVILY_API_KEY (for web search tool)
+2)TAVILY_API_KEY (for web search tool)
 
-LANGCHAIN_API_KEY (for LangSmith tracing)
+3)LANGCHAIN_API_KEY (for LangSmith tracing)
 
 Your .env file should look like this:
 ```bash
@@ -92,6 +92,7 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
 
 
