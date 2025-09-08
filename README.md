@@ -66,12 +66,14 @@ LANGCHAIN_API_KEY="your_langchain_api_key_here"
 Also set LANGSMITH_TRACING="true" and LANGSMITH_PROJECT="TestProject" as environment variables or directly in your Python files (as seen in debugging.ipynb and agent.py).
 
 # How project works
+
+Explanation:Main dashboard of a LangSmith project named "Agentic research." It provides a summary view of the project's performance, listing recent runs and key metrics. This dashboard is crucial for getting a quick overview of your agent's activity and health, including the number of runs, feedback, and the most recent run time.
 ![Preview](img/dashboard.jpg)
 
 
 ![LangSmith Project Dashboard]("C:\Users\harsh\Desktop\Agenticai\img\dashboard.jpg")
 
-Explanation:Main dashboard of a LangSmith project named "Agentic research." It provides a summary view of the project's performance, listing recent runs and key metrics. This dashboard is crucial for getting a quick overview of your agent's activity and health, including the number of runs, feedback, and the most recent run time.
+
 
 # 🚀 Usage
 
@@ -100,6 +102,7 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
 
 
