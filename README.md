@@ -67,11 +67,17 @@ Also set LANGSMITH_TRACING="true" and LANGSMITH_PROJECT="TestProject" as environ
 
 # 🧠 Project Monitoring
 
-Image 1: LangSmith Project Dashboard
+1: LangSmith Project Dashboard
 
 ![Preview](img/dashboard.jpg)
 
 Explanation: This image shows the main dashboard of a LangSmith project, summarizing recent runs. It provides key metrics like run count and feedback for a high-level overview of the agent's performance.
+
+Image 2: Detailed Trace - Initial Steps
+
+![Preview](img/DetailedTrace.jpg)
+
+Explanation: This image displays a detailed "waterfall" trace, showing the sequence of events for a single run. It highlights the initial tool_calling_llm step where the model decides on the next action based on the input query.
 
 
 
@@ -103,6 +109,7 @@ Self-Healing Capabilities: Implement robust error handling, retry mechanisms, an
 Persistent Memory: Explore different memory solutions beyond in-memory for long-term context retention across sessions.
 
 Deployment: Package the application for deployment to cloud platforms.
+
 
 
 
